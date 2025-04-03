@@ -19,6 +19,8 @@ function addPost(newPost) {
   return new Promise((resolve, reject) => {
     setTimeout(() => {
       posts.push(newPost);
+      console.log("A new post was added");
+
       resolve(posts);
 
       //reject("an error");
